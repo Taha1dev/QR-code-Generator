@@ -29,14 +29,6 @@ export default function Home() {
       return;
     }
 
-    // Regular expression pattern to match URL format
-    const urlPattern = /^(ftp|http|https):\/\/[^ "]+$/;
-
-    if (!urlPattern.test(url)) {
-      setIsError('Please enter a valid URL');
-      return;
-    }
-
     setIsLoading(true);
     setTimeout(() => {
       setIsGenerated(true);
