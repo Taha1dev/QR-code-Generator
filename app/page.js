@@ -79,7 +79,7 @@ export default function Home() {
         )}
         {!isGenerated && !isLoading && (
           <div className="text-2xl px-6 h-32 font-bold w-full flex justify-center items-center">
-            Add URL to generate 😙🌚
+            Add Text, URL, etc.. to generate 😙🌚
           </div>
         )}
         <div className="mt-8 flex justify-between flex-col">
@@ -88,7 +88,7 @@ export default function Home() {
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               className="p-4 bg-gray-200 rounded-md w-full focus:outline-none"
-              placeholder="Add a URL"
+              placeholder="Add a text, url, etc.."
               type="text"
             />
           </div>
